@@ -16,22 +16,14 @@ this.router.navigate(['edit-user/' + this.id]);
 4---RouterLink 在html中声明路由导航用的指令
 [routerLink]="['/user/'+id]"
 
-
-组件是Angular应用的基本构建块，可以把一个组件理解为一段带有业务逻辑和数据的html
-组件可以嵌套，可以调服务
-指令，可以添加自定义行为，内置大量的指令
-模块，是用来将应用中不同的部分组织成一个angular框架可以理解的单元
-
-
+@component()装饰器，用来告知angular框架如何处理typescript类，typescript包含多个属性，属性的值叫做元数据，angular会根据元数据的值，来渲染组件，并执行组件
 
 npm run json:serve:remote（启动placeholder的serve）
 json-server db.json (启动本地的serve)
 
-
 bootstrap4中要使用icon ，要安装cnpm install font-awesome --save
 form验证提示 angular2-flash-message（需安装 ：npm i angular2-flash-message --save）
 -------------------------------------------------------------------------------------------------------
-
 安装
 npm install bootstrap@3.3.7 --save
 npm install @types/bootstrap --save
