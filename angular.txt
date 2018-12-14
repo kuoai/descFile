@@ -1,0 +1,38 @@
+1---Routes : 路由配置，保存着哪个URL对应展示哪个组件，以及在哪个RouterOutlet中展示组件。
+import { RouterModule, Routes } from '@angular/router';
+// 设置路由
+const appRoutes: Routes = [
+  {path: '', component: HomeComponent},
+  {path: 'login', component: LoginComponent},
+  {path: 'register', component: RegisterComponent},
+  {path: 'add-user', component: AddUserComponent},
+  {path: 'user/:id', component: UserDetailComponent},
+  {path: 'edit-user/:id', component: EditUserComponent}
+]
+2---RouterOutlet 在html中标记路由内容呈现位置的占位符指令。
+<router-outlet></router-outlet>
+3---Router 负责在运行时执行路由的对象，可以通过调用其navigate()和navigateByUrl()方法来导航到一个指定的路由。
+this.router.navigate(['edit-user/' + this.id]);
+4---RouterLink 在html中声明路由导航用的指令
+[routerLink]="['/user/'+id]"
+
+
+组件是Angular应用的基本构建块，可以把一个组件理解为一段带有业务逻辑和数据的html
+组件可以嵌套，可以调服务
+指令，可以添加自定义行为，内置大量的指令
+模块，是用来将应用中不同的部分组织成一个angular框架可以理解的单元
+
+
+
+npm run json:serve:remote（启动placeholder的serve）
+json-server db.json (启动本地的serve)
+
+
+bootstrap4中要使用icon ，要安装cnpm install font-awesome --save
+form验证提示 angular2-flash-message（需安装 ：npm i angular2-flash-message --save）
+-------------------------------------------------------------------------------------------------------
+
+安装
+npm install bootstrap@3.3.7 --save
+npm install @types/bootstrap --save
+
