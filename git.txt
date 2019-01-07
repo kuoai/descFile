@@ -2,6 +2,8 @@ token的方法
 token -> 372a312273b0d78f17d3dffd3feb972efbfca2d5
 git clone https://372a312273b0d78f17d3dffd3feb972efbfca2d5@github.ibm.com/VGC-Dev/CCM-FrontEnd.git
 
+git clone https://372a312273b0d78f17d3dffd3feb972efbfca2d5@github.ibm.com/VGC-Dev/export_logistic_frontend.git
+
 1.git clone 不指定分支
 
  git clone  http://10.1.1.11/service/sz-service.git

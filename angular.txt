@@ -27,4 +27,6 @@ form验证提示 angular2-flash-message（需安装 ：npm i angular2-flash-message --sav
 安装
 npm install bootstrap@3.3.7 --save
 npm install @types/bootstrap --save
+创建组件
+ng  g  component  components/subnav/options1
 
